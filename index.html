@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="myform" onsubmit="return handleSubmit(event)">
+        <h1 class="title">My Form</h1>
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                <label for="name" class="label"> Name: </label>
+              </th>
+              <td>
+                <input
+                  type="text"
+                  class="inp"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="number" class="label"> Phone: </label>
+              </th>
+              <td>
+                <input
+                  type="number"
+                  class="inp"
+                  name="number"
+                  id="number"
+                  placeholder="Enter your number"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <th><label for="email" class="label"> Email: </label></th>
+              <td>
+                <input
+                  type="email"
+                  class="inp"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button class="btn">Submit</button>
+      </form>
+
+      <div class="tableContainer">
+        <table id="showtable" class="hidetable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
